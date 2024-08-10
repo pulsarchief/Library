@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #a3cef1;
+    display: flex;
+    flex-direction: column
+}
+
+header {
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: #274c77;
+    letter-spacing: 5px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    color: #E7ECEF;
+    box-shadow: 0px 1px 5px rgba(46, 46, 46, 0.685);
+    padding: 1% 2%;
+}
+
+header>img {
+    width: 40px
+}
+
+footer {
+    font-size: large;
+    font-weight: 600;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+main {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-columns: 200px;
+    row-gap: max(1px, 15px);
+    column-gap: max(1px, 15px);
+    padding: 2%;
+}
+
+main>div {
+    background-color: #ffcad4;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 7%;
+    font-size: large;
+    font-weight: bold;
+}
+
+main>div>div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+main button {
+    font-size: large;
+    padding: 1px;
+}
+
+
+footer>p {
+    padding: 1%;
+    text-wrap: nowrap;
+    color: #000000;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+dialog {
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: calc(50% - 175px);
+    left: calc(50% - 175px);
+    bottom: calc(50% - 175px);
+    right: calc(50% - 175px);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: x-large;
+}
+
+dialog>form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+}
+
+form>p {
+    width: 100%;
+    text-align: center;
+}
+
+form>div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+form>div>input {
+    width: 180px;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 100%;
+    height: 1.5em;
+}
+
+label {
+    text-wrap: nowrap;
+}
+
+form button {
+    align-self: center;
+    width: 40%;
+    height: 130%;
+}
+
+::backdrop {
+    background-color: #00000059;
+}
+
+body>button {
+    width: fit-content;
+    align-self: center;
+    margin: 1%;
+    padding: 1% 2%;
+    font-size: larger;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px 1px black;
+    /* color: #E7ECEF; */
+}

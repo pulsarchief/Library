@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Library</title>
+        <link
+            rel="shortcut icon"
+            href="icons/library.ico"
+            type="image/x-icon" />
+        <link
+            rel="stylesheet"
+            href="style.css" />
+        <script
+            src="script.js"
+            defer></script>
+    </head>
+
+    <body>
+        <header>
+            <img
+                src="icons/bookshelf.png"
+                alt="bookshelf image" />
+            Library
+        </header>
+        <button
+            type="button"
+            id="button">
+            ADD NEW BOOK
+        </button>
+        <dialog>
+            <form
+                id="form_input"
+                method="dialog">
+                <p>BOOK DETAILS</p>
+                <div>
+                    <label for="title">Title</label>
+                    <input
+                        required
+                        type="text"
+                        name="title"
+                        id="title"
+                        placeholder="name of book"
+                        autocomplete="off" />
+                </div>
+                <div>
+                    <label for="author">Author</label>
+                    <input
+                        required
+                        type="text"
+                        name="author"
+                        id="author"
+                        placeholder="author of the book"
+                        autocomplete="off" />
+                </div>
+                <div>
+                    <label for="pages">Pages</label>
+                    <input
+                        placeholder="number of pages"
+                        required
+                        type="number"
+                        name="pages"
+                        id="pages"
+                        autocomplete="off" />
+                </div>
+                <div>
+                    <input
+                        type="radio"
+                        name="READING"
+                        id="read"
+                        value="READ"
+                        autocomplete="off"
+                        required
+                        checked />
+                    <label for="read">READ</label>
+                    <input
+                        type="radio"
+                        name="READING"
+                        id="not_read"
+                        value="NOT READ"
+                        autocomplete="off" />
+                    <label for="not_read">NOT READ</label>
+                </div>
+                <div>
+                    <button
+                        id="cancel"
+                        type="button">
+                        CANCEL
+                    </button>
+                    <button
+                        id="submit"
+                        type="submit">
+                        SUBMIT
+                    </button>
+                </div>
+            </form>
+        </dialog>
+        <main></main>
+        <footer>
+            <p>
+                Copyright © 2024
+                <a href="https://github.com/pulsarchief">Pulsar Chief</a>
+            </p>
+        </footer>
+    </body>
+</html>
