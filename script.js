@@ -11,6 +11,8 @@ const titleInput = document.querySelector("input#title");
 const authorInput = document.querySelector("input#author");
 const pageInput = document.querySelector("input#pages");
 
+const form = document.querySelector("form");
+
 let i = 0;
 
 btn.addEventListener("click", () => {
@@ -34,7 +36,7 @@ document.getElementById("form_input").addEventListener("submit", event => {
     pageInput.value = "";
 
     addBookToLibrary(data);
-    dialog.close();
+    let a = dialog.close();
 });
 
 /**
@@ -133,4 +135,5 @@ function readNotRead(button) {
 
 cancel.addEventListener("click", () => {
     dialog.close();
+    form.reset();
 });
