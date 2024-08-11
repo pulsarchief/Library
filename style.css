@@ -94,11 +94,10 @@ footer a {
 dialog {
     width: 350px;
     height: 350px;
-    position: absolute;
-    top: calc(50% - 175px);
-    left: calc(50% - 175px);
-    bottom: calc(50% - 175px);
-    right: calc(50% - 175px);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     border-radius: 10px;
     padding: 20px;
     font-size: x-large;
@@ -156,5 +155,4 @@ body>button {
     font-size: larger;
     border-radius: 50px;
     box-shadow: 5px 5px 10px 1px black;
-    /* color: #E7ECEF; */
 }
